@@ -1,0 +1,8 @@
+universe       = vanilla
+getenv         = True
+executable     = trainCr.sh
+output         = /public/sbyaraval2/python/trainCr.out
+error          = /public/sbyaraval2/python/trainCr.error
+log            = /public/sbyaraval2/python/trainCr.log
+
+queue

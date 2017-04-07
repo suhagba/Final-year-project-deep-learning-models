@@ -1,0 +1,8 @@
+universe       = vanilla
+getenv         = True
+executable     = sketch.sh
+output         = /public/sbyaraval2/python/sketch.out
+error          = /public/sbyaraval2/python/sketch.error
+log            = /public/sbyaraval2/python/sketch.log
+
+queue
