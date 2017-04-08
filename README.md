@@ -27,7 +27,7 @@ By successfully solving sketch recognition, we can now move towards solving mult
   ```
 4. To kill job, use the following command:
   ```
-    condor_q ## get job ID
+    condor_q           # get job ID
     kill job_id
   ```
   
@@ -39,10 +39,9 @@ By successfully solving sketch recognition, we can now move towards solving mult
   ## NGROK tunneling
   
   To set up public IP for the DJANGO application, we open NGROK and excetue the following command for the respective port number(application specific port number):
-  
-    ```
+```
     ngrok port_number
-    ```
+```
   
 
 
