@@ -11,6 +11,40 @@ Our model is designed on the Hebbian principle which states that neurons that ar
 By successfully solving sketch recognition, we can now move towards solving multi-object recognition, sketch object segmentation, image retrieval based on sketch query and the most popular current trend in computer vision, the use of Generative Adversarial Networks to synthesis sketch objects or use a sketch object to synthesis a complete photo realistic image. The possibilities in this domain is endless and we plan to visit and continue our research in deep learning for free-hand sketch objects in the future.     
 <br/>
 
+## Condor Job submit
+
+1. Login to GPU cluster and place the condor job files in your public forlder.
+
+2. To run the condor job, use the following command:
+  ```
+    condor_submit sketch.sub
+  ```
+3. To check error, output and log of the submitted job, use the following command:
+  ```
+    cat sketch.out 
+    cat sketch.log
+    cat skecth.error
+  ```
+4. To kill job, use the following command:
+  ```
+    condor_q ## get job ID
+    kill job_id
+  ```
+  
+## To start the web application
+  Navigate to the web application folder and open terminal and execute the below code:
+  ```
+    python manage.py runserver
+  ```
+  ## NGROK tunneling
+  
+  To set up public IP for the DJANGO application, we open NGROK and excetue the following command for the respective port number(application specific port number):
+    ```
+    ngrok port_number
+  ```
+  
+
+
 ## References
 
 
