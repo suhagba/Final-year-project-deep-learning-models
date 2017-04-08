@@ -1,0 +1,470 @@
+Confusion Matrix:
+
+Predicted      airplane  alarm clock  angel  ant  apple  arm  armchair  \
+Actual                                                                   
+airplane             64            0      0    0      0    0         0   
+alarm clock           0           66      0    0      0    0         0   
+angel                 0            0     70    0      0    0         0   
+ant                   0            0      0   65      0    0         0   
+apple                 0            0      0    0     79    0         0   
+arm                   0            0      0    0      0   58         0   
+armchair              0            0      0    0      0    0        67   
+ashtray               0            0      0    0      0    0         0   
+axe                   0            0      0    0      0    0         2   
+backpack              0            0      0    0      0    0         0   
+banana                0            0      0    0      0    0         0   
+barn                  0            0      0    0      0    0         0   
+baseball bat          0            0      0    0      0    0         0   
+basket                0            0      0    0      0    0         1   
+bathtub               0            0      0    0      0    1         0   
+bear (animal)         0            0      0    1      0    0         0   
+bed                   0            0      0    0      0    0         2   
+bee                   1            0      0    0      0    0         1   
+beer-mug              0            0      0    0      0    0         0   
+bell                  0            0      0    0      0    0         0   
+bench                 0            0      0    0      0    0         0   
+bicycle               0            0      0    0      0    0         0   
+binoculars            0            0      0    0      0    0         0   
+blimp                 0            0      0    0      0    0         0   
+book                  0            0      0    0      0    0         1   
+bookshelf             0            0      0    0      0    0         0   
+boomerang             0            0      0    0      0    1         0   
+bottle opener         0            0      0    0      0    0         0   
+bowl                  0            0      0    0      0    0         0   
+brain                 0            0      0    0      0    0         0   
+...                 ...          ...    ...  ...    ...  ...       ...   
+tennis-racket         0            0      0    0      0    0         0   
+tent                  0            0      0    0      0    0         0   
+tiger                 0            0      1    0      0    0         0   
+tire                  0            0      0    0      0    0         0   
+toilet                0            0      1    0      0    0         3   
+tomato                0            1      0    0      7    0         0   
+tooth                 0            0      0    1      0    0         0   
+toothbrush            0            0      0    0      0    0         0   
+tractor               0            0      0    0      0    0         0   
+traffic light         0            0      0    0      0    0         1   
+train                 0            0      0    0      0    0         0   
+tree                  0            0      0    0      0    0         0   
+trombone              0            0      0    0      0    0         0   
+trousers              0            0      0    0      0    0         0   
+truck                 0            0      0    0      0    0         0   
+trumpet               0            0      0    0      0    0         0   
+tv                    0            0      0    0      0    0         0   
+umbrella              0            0      0    0      0    0         0   
+van                   0            0      0    0      0    0         0   
+vase                  0            0      0    0      0    0         0   
+violin                0            0      0    0      0    0         0   
+walkie talkie         0            0      0    0      0    0         0   
+wheel                 0            0      0    0      0    0         0   
+wheelbarrow           0            0      0    0      0    1         0   
+windmill              0            0      0    0      0    0         0   
+wine-bottle           0            0      0    0      0    0         0   
+wineglass             0            0      0    0      0    0         0   
+wrist-watch           0            0      0    0      0    0         0   
+zebra                 0            0      0    0      0    0         0   
+__all__              73           67     85   78     91   69        92   
+
+Predicted      ashtray  axe  backpack   ...     violin  walkie talkie  wheel  \
+Actual                                  ...                                    
+airplane             0    0         0   ...          0              0      0   
+alarm clock          0    0         1   ...          0              0      0   
+angel                0    0         0   ...          0              0      0   
+ant                  0    0         0   ...          0              0      0   
+apple                0    0         0   ...          0              0      0   
+arm                  0    0         0   ...          0              0      0   
+armchair             0    0         0   ...          0              0      0   
+ashtray             52    0         0   ...          0              0      0   
+axe                  0   64         0   ...          0              0      0   
+backpack             0    0        68   ...          0              0      0   
+banana               0    0         0   ...          0              0      0   
+barn                 0    0         1   ...          0              0      0   
+baseball bat         0    0         0   ...          0              0      0   
+basket               3    0         1   ...          0              0      0   
+bathtub              0    0         0   ...          0              0      0   
+bear (animal)        0    0         0   ...          0              0      0   
+bed                  2    0         0   ...          0              0      0   
+bee                  0    0         2   ...          0              0      0   
+beer-mug             0    0         3   ...          0              0      0   
+bell                 0    0         0   ...          0              0      0   
+bench                0    0         0   ...          0              0      0   
+bicycle              0    0         0   ...          0              0      0   
+binoculars           0    0         2   ...          0              0      0   
+blimp                0    0         0   ...          0              0      0   
+book                 0    0         0   ...          0              0      0   
+bookshelf            0    0         0   ...          0              0      0   
+boomerang            0    1         0   ...          0              0      0   
+bottle opener        0    0         0   ...          0              0      0   
+bowl                 2    0         0   ...          0              0      0   
+brain                0    0         0   ...          0              0      2   
+...                ...  ...       ...   ...        ...            ...    ...   
+tennis-racket        0    0         0   ...          0              0      0   
+tent                 0    0         1   ...          0              0      0   
+tiger                0    0         0   ...          0              0      0   
+tire                 2    0         4   ...          0              0     13   
+toilet               0    0         2   ...          0              0      0   
+tomato               0    0         0   ...          0              0      1   
+tooth                0    0         0   ...          0              0      0   
+toothbrush           0    3         0   ...          0              0      0   
+tractor              0    0         0   ...          0              0      0   
+traffic light        0    0         0   ...          0              0      0   
+train                0    0         0   ...          0              0      0   
+tree                 0    0         0   ...          0              0      0   
+trombone             0    0         0   ...          1              0      0   
+trousers             0    1         0   ...          0              0      0   
+truck                0    0         0   ...          0              0      0   
+trumpet              0    0         0   ...          0              0      0   
+tv                   0    0         0   ...          0              0      0   
+umbrella             0    0         0   ...          0              0      0   
+van                  0    0         0   ...          0              0      0   
+vase                 0    0         0   ...          0              0      0   
+violin               0    0         0   ...         69              0      0   
+walkie talkie        0    0         0   ...          0             78      0   
+wheel                0    0         0   ...          0              0     73   
+wheelbarrow          0    0         0   ...          0              0      0   
+windmill             0    0         0   ...          0              0      0   
+wine-bottle          0    0         0   ...          0              0      0   
+wineglass            0    0         0   ...          0              0      0   
+wrist-watch          0    0         0   ...          0              0      1   
+zebra                0    0         0   ...          0              0      0   
+__all__             84   83       114   ...         80             97     96   
+
+Predicted      wheelbarrow  windmill  wine-bottle  wineglass  wrist-watch  \
+Actual                                                                      
+airplane                 0         0            0          0            0   
+alarm clock              0         0            0          0            1   
+angel                    0         0            0          0            0   
+ant                      0         0            0          0            0   
+apple                    0         0            0          0            0   
+arm                      0         0            0          0            0   
+armchair                 0         0            0          0            0   
+ashtray                  0         0            0          0            0   
+axe                      0         0            0          0            0   
+backpack                 0         0            0          0            1   
+banana                   0         0            0          0            0   
+barn                     0         0            0          0            0   
+baseball bat             0         0            0          0            0   
+basket                   0         0            0          0            0   
+bathtub                  0         0            0          0            0   
+bear (animal)            0         0            0          0            0   
+bed                      0         0            0          0            0   
+bee                      0         0            0          0            0   
+beer-mug                 0         0            0          0            0   
+bell                     0         0            1          0            0   
+bench                    0         0            0          0            0   
+bicycle                  0         0            0          0            0   
+binoculars               0         0            0          0            0   
+blimp                    1         0            0          0            0   
+book                     0         0            0          0            0   
+bookshelf                0         0            0          0            0   
+boomerang                0         0            0          0            0   
+bottle opener            0         0            0          0            1   
+bowl                     0         0            0          0            0   
+brain                    0         0            0          0            0   
+...                    ...       ...          ...        ...          ...   
+tennis-racket            0         0            0          0            0   
+tent                     0         0            0          0            0   
+tiger                    0         0            0          0            0   
+tire                     0         0            0          0            1   
+toilet                   0         0            0          0            1   
+tomato                   0         0            0          0            0   
+tooth                    0         0            0          0            0   
+toothbrush               0         0            0          0            0   
+tractor                  0         0            0          0            0   
+traffic light            0         0            0          0            0   
+train                    0         0            0          0            0   
+tree                     0         0            0          0            0   
+trombone                 0         0            0          0            0   
+trousers                 0         0            0          0            0   
+truck                    0         0            0          0            0   
+trumpet                  0         0            0          0            2   
+tv                       0         0            0          0            0   
+umbrella                 0         0            0          0            0   
+van                      0         0            0          0            0   
+vase                     0         0            0          0            0   
+violin                   0         0            0          0            0   
+walkie talkie            0         0            0          0            0   
+wheel                    0         0            0          0            0   
+wheelbarrow             62         0            0          0            0   
+windmill                 0        78            0          0            0   
+wine-bottle              0         0           78          0            0   
+wineglass                0         0            0         79            0   
+wrist-watch              0         0            0          0           71   
+zebra                    0         0            0          0            0   
+__all__                 65        80           83         80          101   
+
+Predicted      zebra  __all__  
+Actual                         
+airplane           0       80  
+alarm clock        0       80  
+angel              0       80  
+ant                0       80  
+apple              0       80  
+arm                0       80  
+armchair           0       80  
+ashtray            0       80  
+axe                0       80  
+backpack           0       80  
+banana             0       80  
+barn               0       80  
+baseball bat       0       80  
+basket             0       80  
+bathtub            0       80  
+bear (animal)      0       80  
+bed                1       80  
+bee                0       80  
+beer-mug           0       80  
+bell               0       80  
+bench              0       80  
+bicycle            0       80  
+binoculars         0       80  
+blimp              0       80  
+book               0       80  
+bookshelf          0       80  
+boomerang          0       80  
+bottle opener      0       80  
+bowl               0       80  
+brain              0       80  
+...              ...      ...  
+tennis-racket      0       80  
+tent               0       80  
+tiger              1       80  
+tire               0       80  
+toilet             0       80  
+tomato             0       80  
+tooth              0       80  
+toothbrush         0       80  
+tractor            0       80  
+traffic light      0       80  
+train              0       80  
+tree               0       80  
+trombone           0       80  
+trousers           0       80  
+truck              0       80  
+trumpet            0       80  
+tv                 0       80  
+umbrella           0       80  
+van                0       80  
+vase               0       80  
+violin             0       80  
+walkie talkie      0       80  
+wheel              0       80  
+wheelbarrow        0       80  
+windmill           0       80  
+wine-bottle        0       80  
+wineglass          0       80  
+wrist-watch        0       80  
+zebra             72       80  
+__all__           78    20000  
+
+[251 rows x 251 columns]
+
+
+Overall Statistics:
+
+Accuracy: 0.8315
+95% CI: (0.82623933741156963, 0.83666411120240547)
+No Information Rate: ToDo
+P-Value [Acc > NIR]: 0.0
+Kappa: 0.830823293173
+Mcnemar's Test P-Value: ToDo
+
+
+Class Statistics:
+
+Classes                                   airplane  alarm clock        angel  \
+Population                                   20000        20000        20000   
+P: Condition positive                           80          160           80   
+N: Condition negative                        19920        19840        19920   
+Test outcome positive                           73          136           85   
+Test outcome negative                        19927        19864        19915   
+TP: True Positive                               64          124           70   
+TN: True Negative                            19911        19828        19905   
+FP: False Positive                               9           12           15   
+FN: False Negative                              16           36           10   
+TPR: (Sensitivity, hit rate, recall)           0.8        0.775        0.875   
+TNR=SPC: (Specificity)                    0.999548     0.999395     0.999247   
+PPV: Pos Pred Value (Precision)           0.876712     0.911765     0.823529   
+NPV: Neg Pred Value                       0.999197     0.998188     0.999498   
+FPR: False-out                         0.000451807  0.000604839  0.000753012   
+FDR: False Discovery Rate                 0.123288    0.0882353     0.176471   
+FNR: Miss Rate                                 0.2        0.225        0.125   
+ACC: Accuracy                              0.99875       0.9976      0.99875   
+F1 score                                  0.836601     0.837838     0.848485   
+MCC: Matthews correlation coefficient     0.836858     0.839442     0.848251   
+Informedness                              0.799548     0.774395     0.874247   
+Markedness                                0.875909     0.909952     0.823027   
+Prevalence                                   0.004        0.008        0.004   
+LR+: Positive likelihood ratio             1770.67      1281.33         1162   
+LR-: Negative likelihood ratio             0.20009     0.225136     0.125094   
+DOR: Diagnostic odds ratio                 8849.33      5691.37         9289   
+FOR: False omission rate               0.000802931   0.00181232  0.000502134   
+
+Classes                                        ant        apple          arm  \
+Population                                   20000        20000        20000   
+P: Condition positive                           80           80           80   
+N: Condition negative                        19920        19920        19920   
+Test outcome positive                           78           91           69   
+Test outcome negative                        19922        19909        19931   
+TP: True Positive                               65           79           58   
+TN: True Negative                            19907        19908        19909   
+FP: False Positive                              13           12           11   
+FN: False Negative                              15            1           22   
+TPR: (Sensitivity, hit rate, recall)        0.8125       0.9875        0.725   
+TNR=SPC: (Specificity)                    0.999347     0.999398     0.999448   
+PPV: Pos Pred Value (Precision)           0.833333     0.868132      0.84058   
+NPV: Neg Pred Value                       0.999247      0.99995     0.998896   
+FPR: False-out                          0.00065261   0.00060241  0.000552209   
+FDR: False Discovery Rate                 0.166667     0.131868      0.15942   
+FNR: Miss Rate                              0.1875       0.0125        0.275   
+ACC: Accuracy                               0.9986      0.99935      0.99835   
+F1 score                                  0.822785     0.923977     0.778523   
+MCC: Matthews correlation coefficient     0.822149     0.925585     0.779844   
+Informedness                              0.811847     0.986898     0.724448   
+Markedness                                 0.83258     0.868082     0.839476   
+Prevalence                                   0.004        0.004        0.004   
+LR+: Positive likelihood ratio                1245      1639.25      1312.91   
+LR-: Negative likelihood ratio            0.187622    0.0125075     0.275152   
+DOR: Diagnostic odds ratio                 6635.67       131061      4771.58   
+FOR: False omission rate               0.000752936  5.02285e-05   0.00110381   
+
+Classes                                  armchair     ashtray          axe  \
+Population                                  20000       20000        20000   
+P: Condition positive                         240          80           80   
+N: Condition negative                       19760       19920        19920   
+Test outcome positive                         240          84           83   
+Test outcome negative                       19760       19916        19917   
+TP: True Positive                             205          52           64   
+TN: True Negative                           19725       19888        19901   
+FP: False Positive                             35          32           19   
+FN: False Negative                             35          28           16   
+TPR: (Sensitivity, hit rate, recall)     0.854167        0.65          0.8   
+TNR=SPC: (Specificity)                   0.998229    0.998394     0.999046   
+PPV: Pos Pred Value (Precision)          0.854167    0.619048     0.771084   
+NPV: Neg Pred Value                      0.998229    0.998594     0.999197   
+FPR: False-out                         0.00177126  0.00160643  0.000953815   
+FDR: False Discovery Rate                0.145833    0.380952     0.228916   
+FNR: Miss Rate                           0.145833        0.35          0.2   
+ACC: Accuracy                              0.9965       0.997      0.99825   
+F1 score                                 0.854167    0.634146     0.785276   
+MCC: Matthews correlation coefficient    0.852395    0.632831     0.784532   
+Informedness                             0.852395    0.648394     0.799046   
+Markedness                               0.852395    0.617642     0.770281   
+Prevalence                                  0.012       0.004        0.004   
+LR+: Positive likelihood ratio            482.238     404.625      838.737   
+LR-: Negative likelihood ratio           0.146092    0.350563     0.200191   
+DOR: Diagnostic odds ratio                3300.92     1154.21      4189.68   
+FOR: False omission rate               0.00177126   0.0014059  0.000803334   
+
+Classes                                  backpack     ...              vase  \
+Population                                  20000     ...             20000   
+P: Condition positive                          80     ...                80   
+N: Condition negative                       19920     ...             19920   
+Test outcome positive                         114     ...                83   
+Test outcome negative                       19886     ...             19917   
+TP: True Positive                              68     ...                71   
+TN: True Negative                           19874     ...             19908   
+FP: False Positive                             46     ...                12   
+FN: False Negative                             12     ...                 9   
+TPR: (Sensitivity, hit rate, recall)         0.85     ...            0.8875   
+TNR=SPC: (Specificity)                   0.997691     ...          0.999398   
+PPV: Pos Pred Value (Precision)          0.596491     ...          0.855422   
+NPV: Neg Pred Value                      0.999397     ...          0.999548   
+FPR: False-out                         0.00230924     ...        0.00060241   
+FDR: False Discovery Rate                0.403509     ...          0.144578   
+FNR: Miss Rate                               0.15     ...            0.1125   
+ACC: Accuracy                              0.9971     ...           0.99895   
+F1 score                                 0.701031     ...          0.871166   
+MCC: Matthews correlation coefficient    0.710724     ...          0.870787   
+Informedness                             0.847691     ...          0.886898   
+Markedness                               0.595888     ...           0.85497   
+Prevalence                                  0.004     ...             0.004   
+LR+: Positive likelihood ratio            368.087     ...           1473.25   
+LR-: Negative likelihood ratio           0.150347     ...          0.112568   
+DOR: Diagnostic odds ratio                2448.25     ...           13087.7   
+FOR: False omission rate               0.00060344     ...       0.000451875   
+
+Classes                                     violin walkie talkie        wheel  \
+Population                                   20000         20000        20000   
+P: Condition positive                           80            80           80   
+N: Condition negative                        19920         19920        19920   
+Test outcome positive                           80            97           96   
+Test outcome negative                        19920         19903        19904   
+TP: True Positive                               69            78           73   
+TN: True Negative                            19909         19901        19897   
+FP: False Positive                              11            19           23   
+FN: False Negative                              11             2            7   
+TPR: (Sensitivity, hit rate, recall)        0.8625         0.975       0.9125   
+TNR=SPC: (Specificity)                    0.999448      0.999046     0.998845   
+PPV: Pos Pred Value (Precision)             0.8625      0.804124     0.760417   
+NPV: Neg Pred Value                       0.999448        0.9999     0.999648   
+FPR: False-out                         0.000552209   0.000953815   0.00115462   
+FDR: False Discovery Rate                   0.1375      0.195876     0.239583   
+FNR: Miss Rate                              0.1375         0.025       0.0875   
+ACC: Accuracy                               0.9989       0.99895       0.9985   
+F1 score                                    0.8625      0.881356     0.829545   
+MCC: Matthews correlation coefficient     0.861948      0.884961     0.832275   
+Informedness                              0.861948      0.974046     0.911345   
+Markedness                                0.861948      0.804023     0.760065   
+Prevalence                                   0.004         0.004        0.004   
+LR+: Positive likelihood ratio             1561.91       1022.21      790.304   
+LR-: Negative likelihood ratio            0.137576     0.0250239    0.0876011   
+DOR: Diagnostic odds ratio                 11353.1       40849.4      9021.62   
+FOR: False omission rate               0.000552209   0.000100487  0.000351688   
+
+Classes                               wheelbarrow     windmill  wine-bottle  \
+Population                                  20000        20000        20000   
+P: Condition positive                         160           80           80   
+N: Condition negative                       19840        19920        19920   
+Test outcome positive                         161           80           83   
+Test outcome negative                       19839        19920        19917   
+TP: True Positive                             135           78           78   
+TN: True Negative                           19814        19918        19915   
+FP: False Positive                             26            2            5   
+FN: False Negative                             25            2            2   
+TPR: (Sensitivity, hit rate, recall)      0.84375        0.975        0.975   
+TNR=SPC: (Specificity)                    0.99869       0.9999     0.999749   
+PPV: Pos Pred Value (Precision)          0.838509        0.975     0.939759   
+NPV: Neg Pred Value                       0.99874       0.9999       0.9999   
+FPR: False-out                         0.00131048  0.000100402  0.000251004   
+FDR: False Discovery Rate                0.161491        0.025     0.060241   
+FNR: Miss Rate                            0.15625        0.025        0.025   
+ACC: Accuracy                             0.99745       0.9998      0.99965   
+F1 score                                 0.841121        0.975     0.957055   
+MCC: Matthews correlation coefficient     0.83984       0.9749     0.957043   
+Informedness                              0.84244       0.9749     0.974749   
+Markedness                               0.837249       0.9749     0.939659   
+Prevalence                                  0.008        0.004        0.004   
+LR+: Positive likelihood ratio            643.846         9711       3884.4   
+LR-: Negative likelihood ratio           0.156455    0.0250025    0.0250063   
+DOR: Diagnostic odds ratio                4115.22       388401       155337   
+FOR: False omission rate               0.00126014  0.000100402  0.000100417   
+
+Classes                                  wineglass  wrist-watch        zebra  
+Population                                   20000        20000        20000  
+P: Condition positive                           80           80           80  
+N: Condition negative                        19920        19920        19920  
+Test outcome positive                           80          101           78  
+Test outcome negative                        19920        19899        19922  
+TP: True Positive                               79           71           72  
+TN: True Negative                            19919        19890        19914  
+FP: False Positive                               1           30            6  
+FN: False Negative                               1            9            8  
+TPR: (Sensitivity, hit rate, recall)        0.9875       0.8875          0.9  
+TNR=SPC: (Specificity)                     0.99995     0.998494     0.999699  
+PPV: Pos Pred Value (Precision)             0.9875      0.70297     0.923077  
+NPV: Neg Pred Value                        0.99995     0.999548     0.999598  
+FPR: False-out                         5.02008e-05   0.00150602  0.000301205  
+FDR: False Discovery Rate                   0.0125      0.29703    0.0769231  
+FNR: Miss Rate                              0.0125       0.1125          0.1  
+ACC: Accuracy                               0.9999      0.99805       0.9993  
+F1 score                                    0.9875      0.78453     0.911392  
+MCC: Matthews correlation coefficient      0.98745      0.78894     0.911115  
+Informedness                               0.98745     0.885994     0.899699  
+Markedness                                 0.98745     0.702518     0.922675  
+Prevalence                                   0.004        0.004        0.004  
+LR+: Positive likelihood ratio               19671        589.3         2988  
+LR-: Negative likelihood ratio           0.0125006      0.11267      0.10003  
+DOR: Diagnostic odds ratio              1.5736e+06      5230.33        29871  
+FOR: False omission rate               5.02008e-05  0.000452284  0.000401566  
+
+[26 rows x 250 columns]

@@ -1,0 +1,115 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Deep learning for sketch object labelling</title>
+  <meta name="description" content="Signature Pad - HTML5 canvas based smooth signature drawing using variable width spline interpolation.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="stylesheet" href={% static "css/signature-pad.css" %}>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39365077-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body onselectstart="return false" style="overflow-x: hidden;">
+    <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">Deep Learning for sketch object labelling</a>
+       </div>
+     </div>
+   </nav>
+    <div class="row">
+        <div class="col-md-12 col-md-offset-2">
+            <div id="signature-pad" class="m-signature-pad">
+              <div class="m-signature-pad--body">
+                <canvas></canvas>
+              </div>
+              <div class="m-signature-pad--footer">
+                <div class="description">Sketch above</div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                      <button type="button" class="button clear btn btn-default" data-action="clear">Clear</button>
+                      {% csrf_token %}
+                      <button type="button" class="button save btn btn-default" data-action="submit">Submit</button>
+                    </div>
+                    <!-- <form enctype="multipart/form-data" action=""
+                    method="post" class="putImages">
+                    <input name="canvasFile" type="file" multiple/ >
+                    <input class="button" type="submit" alt="Upload" value="Upload" />
+                    </form> -->
+                <!-- <div class="col-md-2 pull-right">
+                        <form id="my_form" method="post">{% csrf_token %}
+                            <input type="submit" class="button save btn btn-default" value="Submit">
+                        </form>
+                    </div> -->
+                </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+</br>
+  <div class="row">
+      <div class="col-md-9 col-md-offset-1 center">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <i class="fa fa-clock-o fa-fw"></i> Results
+              </div>
+              <!-- /.panel-heading -->
+              <div id="results" class="panel-body">
+                  <h2>How it works</h2>
+                  <ul>
+                      <li>
+                          You skecth on the sketch pad.
+                      </li>
+                      <li>
+                          Your request is sent to our servers with GPUs courtesy <span style="color:green;">CITYU HK CS department.</span>
+                      </li>
+                      <li>
+                          Our servers run our deep-learning based skecth recognition algorithms.
+                      </li>
+                      <li>
+                          Results and updates are shown in real-time.
+                      </li>
+                  </ul>
+
+              </div>
+              <!-- /.panel-body -->
+          </div>
+          <!-- /.panel -->
+      </div>
+  </div>
+
+  <script src={% static "js/signature_pad.js" %}></script>
+  <script src={% static "js/app.js" %}></script>
+</body>
+</html>
