@@ -39,9 +39,11 @@ By successfully solving sketch recognition, we can now move towards solving mult
   ## NGROK tunneling
   
   To set up public IP for the DJANGO application, we open NGROK and excetue the following command for the respective port number(application specific port number):
+  
     ```
     ngrok port_number
-  ```
+    
+    ```
   
 
 
