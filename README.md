@@ -42,7 +42,6 @@ By successfully solving sketch recognition, we can now move towards solving mult
   
     ```
     ngrok port_number
-    
     ```
   
 
